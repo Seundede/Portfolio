@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#toggle-switch::after{
+    content: '';
+    @apply h-[37px] w-[31px] rounded-full bg-black absolute left-0 top-0 transform scale-110 transition duration-200 cursor-pointer;
+}
+#toggle-switch:checked::after {
+    @apply transform scale-110 translate-x-[30px]
+}
+@layer components {
+    .button {
+        @apply border-2 border-black p-4 cursor-pointer rounded text-white bg-black dark:border-white hover:scale-105
+    }
+}
