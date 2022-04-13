@@ -58,7 +58,7 @@ const Skills = () => {
       <Navbar />
       <div className="px-8 xl:px-16">
         <motion.div
-          className=" grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 mt-[85px] mb-[50px] ]"
+          className=" grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 mt-[50px] mb-[50px] ]"
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5, type: "tween" }}
