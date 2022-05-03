@@ -42,7 +42,7 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center">
           {data.map((item, index) => (
             <Link to={item.link} key={index}>
-              <li className="px-4 cursor-pointer lg:text-xl">{item.title}</li>
+              <li className="px-4 cursor-pointer lg:text-xl hover:underline">{item.title}</li>
             </Link>
           ))}
           <MdOutlineDarkMode
