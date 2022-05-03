@@ -40,8 +40,8 @@ const data = [
     description:
       "Netflix clone built with react, redux, react hooks, firebase and styled component.",
     stack:
-      "React, Redux , Styled components, Firebase, React router, Axios, Netlify (deployment)",
-    liveLink: "https://netflix-clone-build.netlify.app/",
+      "Next JS, typescript, tailwind, firebase, recoil, material UI, react hook form, Netlify (deployment)",
+    liveLink: "https://charming-kelpie-a78636.netlify.app/login",
     githubLink: "https://github.com/Seundede/Netflix-clone",
   },
 ];
