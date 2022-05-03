@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
-import { BsSun, BsFillMoonFill } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
-import { useEffect } from "react";
+import { MdOutlineDarkMode } from "react-icons/md";
+
 const Navbar = () => {
   const data = [
     {
@@ -21,19 +21,18 @@ const Navbar = () => {
   const toggle = () => {
     setNav(!nav);
   };
-  
+
   //theme switch
   const themeSwitch = () => {
-   if (localStorage.theme !== "dark") {
-     localStorage.theme = "dark";
-     document.documentElement.classList.add("dark");
-   } else {
-     localStorage.theme = "light";
-     document.documentElement.classList.remove("dark");
-   }
+    if (localStorage.theme !== "dark") {
+      localStorage.theme = "dark";
+      document.documentElement.classList.add("dark");
+    } else {
+      localStorage.theme = "light";
+      document.documentElement.classList.remove("dark");
+    }
   };
 
- 
   return (
     <div>
       <nav className="w-full h-[60px] md:h-[80px] px-8 xl:px-16 flex justify-between items-center dark:bg-black dark:text-white">
@@ -46,16 +45,10 @@ const Navbar = () => {
               <li className="px-4 cursor-pointer lg:text-xl">{item.title}</li>
             </Link>
           ))}
-          <div>
-            <label htmlFor="toggle-switch">
-              <input
-                type="checkbox"
-                id="toggle-switch"
-                onClick={() => themeSwitch()}
-                className="cursor-pointer h-[40px] w-[60px] rounded-full appearance-none border-black bg-white border-2 checked:bg-white transition duration-200 relative dark:border-white"
-              />
-            </label>
-          </div>
+          <MdOutlineDarkMode
+            onClick={() => themeSwitch()}
+            className="cursor-pointer w-7 h-7"
+          />
         </ul>
 
         {/* Hamburger */}
@@ -76,14 +69,10 @@ const Navbar = () => {
                 <li className="py-[30px] text-lg">{item.title}</li>
               </Link>
             ))}
-            <label htmlFor="toggle-switch">
-              <input
-                type="checkbox"
-                id="toggle-switch"
-                onClick={() => themeSwitch()}
-                className="cursor-pointer h-[40px] w-[60px] rounded-full appearance-none border-black bg-white border-2 checked:bg-white transition duration-200 relative dark:border-white"
-              />
-            </label>
+            <MdOutlineDarkMode
+              onClick={() => themeSwitch()}
+              className="cursor-pointer w-7 h-7"
+            />
           </ul>
         </div>
       </nav>
