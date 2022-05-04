@@ -41,7 +41,7 @@ const data = [
       "Netflix clone built with react, redux, react hooks, firebase and styled component.",
     stack:
       "Next JS, typescript, tailwind, firebase, recoil, material UI, react hook form, Netlify (deployment)",
-    liveLink: "https://charming-kelpie-a78636.netlify.app/login",
+    liveLink: "https://goofy-goldberg-081ee2.netlify.app/",
     githubLink: "https://github.com/Seundede/Netflix-clone",
   },
 ];
