@@ -78,7 +78,7 @@ const Projects = () => {
                   x: 0,
                 },
               }}
-              transition={{ duration: 1, type: "tween", delay: 0.2 }}
+              transition={{ duration: 1, type: "tween", delay: 0.1 }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -92,7 +92,7 @@ const Projects = () => {
                   y: 0,
                 },
               }}
-              transition={{ duration: 1.6, type: "tween", delay: 0.3 }}
+              transition={{ duration: 1.6, type: "tween", delay: 0.2 }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
