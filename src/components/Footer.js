@@ -1,10 +1,23 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { isVisible } from '@testing-library/user-event/dist/utils';
+ const data = [
+   {
+     title: "  github",
+     link: "https://github.com/Seundede",
+   },
+   {
+     title: "  linkedin",
+     link: "https://www.linkedin.com/in/mary-omadoye-655b9810b/",
+   },
+   {
+     title: "medium",
+     link: "https://medium.com/@omadoyedede0",
+   },
+ ];
 const Footer = () => {
   return (
     <motion.footer
-      className="h-[90px]  flex flex-col  cursor-pointer uppercase text-xs font-light tracking-widest mt-4 dark:bg-black dark:text-white"
+      className="h-[110px] flex flex-col  cursor-pointer uppercase text-xs font-light tracking-widest mt-4 dark:bg-black dark:text-white"
       variants={{
         hidden: { opacity: 0, x: -100 },
         visible: { opacity: 1, x: 0 },
@@ -18,18 +31,9 @@ const Footer = () => {
         👋 dedeomadoye@yahoo.com
       </a>
       <div className="flex flex-col ">
-        <a
-          href="https://github.com/Seundede"
-          className="py-2 tracking-widest hover:underline"
-        >
-          github
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mary-omadoye-655b9810b/"
-          className="py-2 tracking-widest hover:underline"
-        >
-          linkedin
-        </a>
+        {data.map((item) => (
+          <a className="py-2 tracking-widest hover:underline" href={item.link}>{item.title}</a>
+        ))}
       </div>
     </motion.footer>
   );
