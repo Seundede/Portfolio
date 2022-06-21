@@ -11,7 +11,7 @@ const data = [
     image: ecommerce,
     title: "E-commerce",
     description:
-      "A digital platform and business model where you can buy products online. It was made with next js and strip payment API for payment processing.",
+      "A digital platform and business model where you can buy products online. It was made with Next js and stripe payment API for payment processing.",
     stack: "Next js, Redux, Tailwind, Firebase, Stripe, Axios, Next-auth",
     liveLink: "https://nextjs-e-commerce-coral.vercel.app/",
     githubLink: "https://github.com/Seundede/Nextjs-E-commerce",
